@@ -5,5 +5,5 @@
 
  - Abra o terminal e digite: `cd back-end` e, em seguida: `yarn dev`.
  - Em outro terminal, digite: `cd front-end` e, em seguida: `yarn start`.
- - Seu navegador padrão seja aberto automaticamente e a aplicação será exibida.
+ - Seu navegador padrão será aberto automaticamente e a aplicação será exibida.
 
