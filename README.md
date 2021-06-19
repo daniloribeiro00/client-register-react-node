@@ -3,6 +3,7 @@
 
  Para executar o projeto, basta clona-lo para seu computador e, em seguida, seguir os passos abaixo:
 
- - Abra o terminal e digite: `cd back-end` e, em seguida: `yarn dev`
- - Em outro terminal, digite: `cd front-end` e, em seguida: `yarn start`
+ - Abra o terminal e digite: `cd back-end` e, em seguida: `yarn dev`.
+ - Em outro terminal, digite: `cd front-end` e, em seguida: `yarn start`.
+ - Seu navegador padrão seja aberto automaticamente e a aplicação será exibida.
 
