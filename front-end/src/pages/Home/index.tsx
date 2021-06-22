@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { scroller, animateScroll as scroll  } from 'react-scroll';
+import { scroller, animateScroll as scroll } from 'react-scroll';
 
 import api from '../../services/api';
 
@@ -39,10 +39,10 @@ export const Home: React.FC = () => {
 
 		if (id) {
 			await api.put(`/clients/${id}`, novoCadastro);
-      scroller.scrollTo(id, {smooth: true});
+			scroller.scrollTo(id, { smooth: true });
 		} else {
 			await api.post('/clients', novoCadastro);
-      scroll.scrollToBottom();
+			scroll.scrollToBottom();
 		}
 		api.get('/clients').then((response) => setClientes(response.data));
 
@@ -79,13 +79,13 @@ export const Home: React.FC = () => {
 			}
 		}
 		loadData();
-    scroll.scrollToTop();
+		scroll.scrollToTop();
 	};
 
 	return (
 		<Container>
 			<Header>
-        <img src="icons/profile.png" alt="Cadastro" />
+				<img src='icons/profile.png' alt='Cadastro' />
 				<h1>Cadastro de Clientes</h1>
 			</Header>
 			<Content>
@@ -107,7 +107,7 @@ export const Home: React.FC = () => {
 						<input
 							type='text'
 							name='telefone'
-              value={telefone}
+							value={telefone}
 							onChange={(e) => setTelefone(e.target.value)}
 							required
 							placeholder='Ex: (24) 99999-9999'
@@ -118,7 +118,7 @@ export const Home: React.FC = () => {
 						<input
 							type='email'
 							name='email'
-              value={email}
+							value={email}
 							onChange={(e) => setEmail(e.target.value)}
 							required
 							placeholder='Ex: antonio.silva@email.com'
@@ -132,9 +132,9 @@ export const Home: React.FC = () => {
 			</Content>
 			<Content>
 				<h2>Cadastros Realizados</h2>
-        {!clientes && (
-          <span className='noData'>Não existem cadastros realizados!</span>
-        )}
+				{!clientes && (
+					<span className='noData'>Não existem cadastros realizados!</span>
+				)}
 				{clientes.map((cliente, indice) => (
 					<Data key={indice}>
 						<div className='leftData' id={cliente.id}>
@@ -162,10 +162,13 @@ export const Home: React.FC = () => {
 					</Data>
 				))}
 			</Content>
-      <Footer>
-        <p>Trabalho desenvolvido para 2AVD da disciplina de POO II do curso de Sistemas de Informação da UniFOA</p>
-        <p>Danilo Duarte Ribeiro | Matrícula: 201801201</p>
-      </Footer>
+			<Footer>
+				<p>
+					Trabalho desenvolvido para 2AVD da disciplina de POO II do curso de
+					Sistemas de Informação da UniFOA
+				</p>
+				<p>Danilo Duarte Ribeiro | Matrícula: 201801201</p>
+			</Footer>
 		</Container>
 	);
 };
