@@ -165,7 +165,7 @@ export const Home: React.FC = () => {
 			<Footer>
 				<p>
 					Trabalho desenvolvido para 2AVD da disciplina de POO II do curso de
-					Sistemas de Informação da UniFOA
+					Sistemas de Informação do UniFOA
 				</p>
 				<p>Danilo Duarte Ribeiro | Matrícula: 201801201</p>
 			</Footer>
