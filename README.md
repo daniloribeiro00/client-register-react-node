@@ -1,4 +1,4 @@
-# client-register
+# client-register-react-node
 
  Trabalho desenvolvido para 2ª AVD de POO II do 4º ano do curso de  Sistemas de Informação do UniFOA (Centro Universitário de Volta Redonda).
 
