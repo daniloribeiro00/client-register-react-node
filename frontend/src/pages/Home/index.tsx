@@ -86,7 +86,7 @@ export const Home: React.FC = () => {
 		<Container>
 			<Header>
 				<img src='icons/profile.png' alt='Cadastro' />
-				<h1>Cadastro de Clientes</h1>
+				<h1>Client Register</h1>
 			</Header>
 			<Content>
 				<Form onSubmit={handleSubmit}>

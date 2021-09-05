@@ -8,21 +8,21 @@ export const Container = styled.div`
 
 export const Header = styled.header`
 	width: 100%;
-	max-width: 700px;
+	max-width: 600px;
 	margin: 0 auto;
 	padding: 30px 0;
 	border-bottom: 1px solid #ddd;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-  img {
-    text-align: center;
-    height: 5rem;
-    margin-bottom: 20px;
-  }
+	img {
+		text-align: center;
+		height: 5rem;
+		margin-bottom: 20px;
+	}
 
 	h1 {
 		display: flex;
@@ -33,11 +33,17 @@ export const Header = styled.header`
 
 export const Content = styled.div`
 	width: 100%;
-	max-width: 700px;
+	/* max-width: 700px; */
 	margin: 0 auto;
 	padding: 30px;
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
 	h2 {
+		width: 100%;
+		max-width: 600px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -54,7 +60,7 @@ export const Content = styled.div`
 		margin-top: 20px;
 	}
 
-  .noData {
+	.noData {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -219,7 +225,7 @@ export const Data = styled.div`
 		.leftData {
 			padding: 0;
 			margin: 0 auto;
-      width: 100%;
+			width: 100%;
 
 			div {
 				display: flex;
@@ -229,50 +235,50 @@ export const Data = styled.div`
 			}
 		}
 
-    .rightData {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      margin: 30px auto 0 auto;
+		.rightData {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			margin: 30px auto 0 auto;
 
-      button {
-        padding: 0 10px;
-      }
+			button {
+				padding: 0 10px;
+			}
 
-      button:last-child {
-        margin: 0;
-        margin-left: 20px;
-      }
+			button:last-child {
+				margin: 0;
+				margin-left: 20px;
+			}
 
-      button:hover {
-			width: 100px;
-			margin-right: 0;
-			filter: brightness(85%);
+			button:hover {
+				width: 100px;
+				margin-right: 0;
+				filter: brightness(85%);
+			}
 		}
-    }
 	}
 `;
 
 export const Footer = styled.footer`
 	width: 100%;
-	max-width: 700px;
+	max-width: 600px;
 	margin: 0 auto;
 	padding: 30px 0;
 	border-top: 1px solid #ddd;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
-  p {
-    text-align: center;
-    font-size: 0.75rem;
-  }
+	p {
+		text-align: center;
+		font-size: 0.75rem;
+	}
 
-  p:first-child {
-    margin-bottom: 5px;
-  }
+	p:first-child {
+		margin-bottom: 5px;
+	}
 `;
